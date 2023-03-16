@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main: This is a main description, what is initial short desc
+ * main - this is a main description§
  * Return: 1 (Success)
 */
 int main(void)
