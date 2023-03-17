@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - this program determine whether the input number is positive or negative
+ * main - this program determines the input polarity
  * Return: 0 (Success)
 */
 int main(void)
