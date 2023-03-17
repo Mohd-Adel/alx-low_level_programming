@@ -3,7 +3,7 @@
  * main - this program determine whether the input number is positive or negative
  * Return: 0 (Success)
 */
-int main(int n,int m)
+int main(int n,char **)
 {
 if (n == 0)
 {
