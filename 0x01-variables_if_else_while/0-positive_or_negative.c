@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-int n;
+int n=5;
 if (n == 0)
 {
 printf("%d is zero", n);
