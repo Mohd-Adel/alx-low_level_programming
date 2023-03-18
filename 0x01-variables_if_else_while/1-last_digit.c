@@ -8,11 +8,12 @@
 int main(void)
 {
 int n;
+int m;
+char x;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
-int m = n % 10;
-char x[];
+m = n % 10;
 if (n > 5)
 {
 x = "and is greater than 5\0"
