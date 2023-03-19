@@ -6,17 +6,25 @@
 int main(void)
 {
 	int i = 48;
-	int j = 48;
+	int j = 49;
 
-	while (i >= 48 && i <= 57)
+	for (i; i <= 56; i++)
 	{
-		while (j >= 48 && j <= 57)
+		for (j; j <= 57; j++)
 		{
-			putchar (i);
-			putchar (j);
-			j++;
+			if (j > i)
+			{
+				putchar(i);
+				putchar(j);
+				if (i != 56 || j != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-		i++;
 	}
+	putchar('\n');
 	return (0);
 }
+
