@@ -7,13 +7,13 @@ int main(void)
 {
 	int i;
 	int j;
-	for (i;0<=i<=9;i++)
-	{
-		for(j;0<=j<=9;j++)
-		{
-			putchar( ij,)
-		}
 
+	for (i; 0 <= i && i <= 9; i++)
+	{
+		for (j; 0 <= j && j <= 9; j++)
+		{
+			putchar (ij)
+		}
 	}
 	return (0)
 }
