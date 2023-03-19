@@ -5,16 +5,13 @@
 */
 int main(void)
 {
-	int i;
-	int j;
-
-	for (i; 0 <= i && i <= 9; i++)
+	for (int i; 0 <= i && i <= 9; i++)
 	{
-		for (j; 0 <= j && j <= 9; j++)
+		for (int j; 0 <= j && j <= 9; j++)
 		{
 			putchar (i);
 			putchar (j);
 		}
 	}
-	return (0)
+	return (0);
 }
