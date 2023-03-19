@@ -5,13 +5,18 @@
 */
 int main(void)
 {
-	for (int i; 0 <= i && i <= 9; i++)
+	int i = 0;
+	int j = 0;
+
+	while (i >= 0 && i <= 9)
 	{
-		for (int j; 0 <= j && j <= 9; j++)
+		while (j >= 0 && j <= 9; j++)
 		{
 			putchar (i);
 			putchar (j);
+			j++;
 		}
+		i++;
 	}
 	return (0);
 }
