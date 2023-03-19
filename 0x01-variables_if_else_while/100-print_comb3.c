@@ -12,10 +12,8 @@ int main(void)
 	{
 		for (j; 0 <= j && j <= 9; j++)
 		{
-			putchar (" ");
 			putchar (i);
 			putchar (j);
-			putchar (",");
 		}
 	}
 	return (0)
