@@ -5,12 +5,12 @@
 */
 int main(void)
 {
-	int i = 0;
-	int j = 0;
+	int i = 48;
+	int j = 48;
 
-	while (i >= 0 && i <= 9)
+	while (i >= 48 && i <= 57)
 	{
-		while (j >= 0 && j <= 9)
+		while (j >= 48 && j <= 57)
 		{
 			putchar (i);
 			putchar (j);
