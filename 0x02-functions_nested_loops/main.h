@@ -1,4 +1,4 @@
-#ifndef "main.h"
+#ifndef "print_alphabet"
 #define 
 /**
  *print_alphabet - prints alphabets
