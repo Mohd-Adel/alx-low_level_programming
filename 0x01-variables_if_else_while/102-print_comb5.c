@@ -17,7 +17,7 @@ for (i = 48; i <= 57; i++)
 			if (k >= i && l >= j)
 			if (k == 48)
 			{
-			l=49;
+			l = 49;
 			}
 			{
 				putchar(i);
@@ -25,8 +25,11 @@ for (i = 48; i <= 57; i++)
 				putchar(' ');
 				putchar(k);
 				putchar(l);
+			if (!(i == 57 && k == 57 && j == 57 && l == 57))
+			{
 				putchar(',');
 				putchar(' ');
+			}
 			}
 			}
 		}
