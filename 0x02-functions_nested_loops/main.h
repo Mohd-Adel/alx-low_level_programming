@@ -15,6 +15,6 @@ void print_alphabet(void)
 			putchar(10);
 		}
 	}
-};
+}
 
 #endif
