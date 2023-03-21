@@ -4,8 +4,18 @@
  * main- prints the alphabet, in lowercase, followed by a new line.
  * Return: 0 (Success)
 */
-int main(void)
-{
-	print_alphabet();
-	return (0);
+	void print_alphabet(void)
+	{
+		{
+        int i;
+
+        for (i = 97; i <= 122; i++)
+        {
+                _putchar(i);
+                if (i == 122)
+                {
+                        _putchar(10);
+                }
+        }
+}
 }
