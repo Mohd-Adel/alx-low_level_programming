@@ -5,14 +5,14 @@
 */
 void print_alphabet(void)
 {
-	int i;
+	int i, _putchar;
 
 	for (i = 97; i <= 122; i++)
 	{
-		putchar(i);
+		_putchar(i);
 		if (i == 122)
 		{
-			putchar(10);
+			_putchar(10);
 		}
 	}
 }
