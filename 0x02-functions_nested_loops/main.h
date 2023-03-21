@@ -2,7 +2,13 @@
 #define _MAIN
 /**
  *print_alphabet - prints alphabets
+ _putchar - prints _putchar
 */
+void _putchar(void)
+{
+	printf("_putchar\n")
+}
+
 void print_alphabet(void)
 {
 	int i, _putchar;
