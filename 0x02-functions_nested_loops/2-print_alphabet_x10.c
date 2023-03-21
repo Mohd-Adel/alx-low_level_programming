@@ -13,7 +13,7 @@ void print_alphabet_x10(void)
 			_putchar(i);
 			if ( i == 122 )
 			{
-				_putchar("\n");
+				_putchar(10);
 			}
 		}
 	}
