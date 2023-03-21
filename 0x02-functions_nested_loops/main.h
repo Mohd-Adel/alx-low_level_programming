@@ -1,5 +1,5 @@
-#ifndef "print_alphabet"
-#define 
+#ifndef
+#define
 /**
  *print_alphabet - prints alphabets
 */
