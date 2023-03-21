@@ -1,3 +1,4 @@
+#include <stdio.h>
 #ifndef _MAIN
 #define _MAIN
 /**
@@ -6,12 +7,12 @@
 */
 void _putchar(void)
 {
-	printf("_putchar\n")
+	printf("_putchar\n");
 }
 
 void print_alphabet(void)
 {
-	int i, _putchar;
+	int i;
 
 	for (i = 97; i <= 122; i++)
 	{
