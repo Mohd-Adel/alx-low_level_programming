@@ -15,8 +15,8 @@ for (i = 48 ; i <= 57 ; i++)
 			putchar(i);
 			putchar(j);
 			putchar(k);
-			putchar(",");
-			putchar(" ");
+			putchar(',');
+			putchar(' ');
 
 		}
 	}
