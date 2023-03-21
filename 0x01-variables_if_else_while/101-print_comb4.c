@@ -12,12 +12,14 @@ for (i = 48 ; i <= 57 ; i++)
 	{
 		for (k = 50 ; k <= 55 ; k++)
 		{
+			if (i != j && i != k && k != j)
+			{
 			putchar(i);
 			putchar(j);
 			putchar(k);
 			putchar(',');
 			putchar(' ');
-
+			}
 		}
 	}
 }
