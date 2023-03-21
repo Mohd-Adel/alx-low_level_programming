@@ -12,7 +12,7 @@ for (i = 48 ; i <= 55 ; i++)
 	{
 		for (k = 50 ; k <= 57 ; k++)
 		{
-			if (i != j && i != k && k != j)
+			if (i != j && i != k && k != j && j > i && k > i && k > j)
 			{
 			putchar(i);
 			putchar(j);
