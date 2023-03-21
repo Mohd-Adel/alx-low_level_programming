@@ -15,11 +15,11 @@ for (i = 48; i <= 57; i++)
 			for (l = 48; l <= 57; l++)
 			{
 			if (k >= i && l >= j)
+			{
 			if (k == 48)
 			{
 			l = 49;
 			}
-			{
 				putchar(i);
 				putchar(j);
 				putchar(' ');
