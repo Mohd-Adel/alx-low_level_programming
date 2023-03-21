@@ -1,5 +1,5 @@
-#ifndef(main.h)
-#define(main.h)
+#ifndef _MAIN
+#define _MAIN
 /**
  *print_alphabet - prints alphabets
 */
