@@ -26,6 +26,7 @@ for (i = 48 ; i <= 55 ; i++)
 		}
 	}
 }
+putchar('\n');
 return (0);
 }
 
