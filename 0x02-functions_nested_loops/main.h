@@ -1,4 +1,3 @@
-#include <stdio.h>
 #ifndef _MAIN
 #define _MAIN
 /**
@@ -12,7 +11,7 @@ void _putchar(void)
 
 void print_alphabet(void)
 {
-	int i;
+	int i, putchar;
 
 	for (i = 97; i <= 122; i++)
 	{
