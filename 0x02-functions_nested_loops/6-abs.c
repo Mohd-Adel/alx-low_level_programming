@@ -1,5 +1,5 @@
 #include "main.h"
-#include <inttypes.h>
+#include <stdlib.h>
 /**
  * _abs - checks for lowercase character.
  * Return: 0 (Success)
