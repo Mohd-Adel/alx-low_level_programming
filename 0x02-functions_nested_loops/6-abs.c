@@ -3,10 +3,10 @@
 /**
  * _abs - checks for lowercase character.
  * Return: 0 (Success)
- * @int: input
+ * @n: input
  */
-int _abs(int)
+int _abs(int n)
 {
-	return (abs(int));
+	return (abs(n));
 }
 
