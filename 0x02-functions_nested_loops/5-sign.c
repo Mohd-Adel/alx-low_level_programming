@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 /**
  * print_sign - checks for lowercase character.
  * Return: 0 (Success)
