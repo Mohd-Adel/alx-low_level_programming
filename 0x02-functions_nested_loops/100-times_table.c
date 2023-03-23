@@ -16,11 +16,11 @@ void print_times_table(int n)
 			_putchar('0' + (i * j));
 			_putchar(',');
 			_putchar(' ');
-			if ((i * j) > 99)
+			if ((i * j) < 100)
 			{
 			_putchar(' ');
 			}
-			if ((i * j) > 9 && (i * j) < 99)
+			if ((i * j) < 10)
 			{
 			_putchar(' ');
 			}
