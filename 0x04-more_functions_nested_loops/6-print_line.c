@@ -12,14 +12,7 @@ void print_line(int n)
 	for (i = 1; i <= n; i++)
 	{
 		_putchar(95);
-		if (i == n)
-		{
-			_putchar('\n');
-		}
 	}
 	}
-	else
-	{
-	_putchar('\n')
-	}
+	_putchar('/n');
 }
