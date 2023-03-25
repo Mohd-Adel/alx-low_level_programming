@@ -15,7 +15,6 @@ int main(void)
 			if (n == i)
 			{
 				printf("%d\n", n);
-				return (n);
 			}
 			n = n / i;
 			i = 1;
