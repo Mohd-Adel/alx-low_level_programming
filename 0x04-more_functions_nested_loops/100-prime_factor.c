@@ -5,25 +5,20 @@
  */
 int main(void)
 {
-	int n = 612852475143;
+	int i;
+	long int n = 612852475143;
 
-	while ((n % 5) == 0 || (n % 3) == 0 || (n % 2) == 0)
+	for (i = 1 ; i <= n ; i++)
 	{
-		if ((n % 2) == 0)
+		if ((n % i) == 0)
 		{
-			n = n / 2;
-		}
-		else if ((n % 3) == 0)
-		{
-			n = n / 3;
-		}
-		else if ((n % 5) == 0)
-		{
-			n = n / 5;
-		}
-		else
-		{
-			return (n);
+			if (n == i)
+			{
+				printf("%d \n", i);
+				return (i);
+			}
+		n = n / i;
+		i = 2;
 		}
 	}
 }
