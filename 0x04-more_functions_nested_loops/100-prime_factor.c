@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - prints the largest prime factor of the number.
- * Return: 0 or 1.
+ * Return: 0.
  */
 int main(void)
 {
@@ -21,4 +21,5 @@ int main(void)
 			i = 2;
 		}
 	}
+	return (0);
 }
