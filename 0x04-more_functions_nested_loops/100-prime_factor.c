@@ -5,8 +5,7 @@
  */
 int main(void)
 {
-	int i;
-	long int n = 612852475143;
+	long int i, j, n = 612852475143;
 
 	for (i = 1; i <= n; i++)
 	{
@@ -15,10 +14,12 @@ int main(void)
 			if (n == i)
 			{
 				printf("%ld\n", n);
+				break;
 			}
-			n = n / i;
+			j = n / i;
+			n = j;
 			i = 1;
 		}
 	}
-	return (n);
+	return (0);
 }
