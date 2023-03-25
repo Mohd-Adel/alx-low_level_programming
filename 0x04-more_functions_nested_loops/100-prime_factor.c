@@ -14,12 +14,11 @@ int main(void)
 		{
 			if (n == i)
 			{
-				printf("%d\n", i);
+				printf("%ld\n", n);
 				return (i);
 			}
 			n = n / i;
 			i = 1;
 		}
 	}
-	return (n);
 }
