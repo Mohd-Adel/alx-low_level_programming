@@ -3,7 +3,7 @@
  * main - prints the largest prime factor of the number.
  * Return: 0.
  */
-void main(void)
+int main(void)
 {
 	int i;
 	long int n = 612852475143;
@@ -14,11 +14,12 @@ void main(void)
 		{
 			if (n == i)
 			{
-				printf("%d \n", i);
+				printf("%d\n", i);
 				return (i);
 			}
 			n = n / i;
 			i = 2;
 		}
 	}
+	return (0);
 }
