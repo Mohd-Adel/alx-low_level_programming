@@ -3,7 +3,7 @@
  * main - prints the largest prime factor of the number.
  * Return: 0.
  */
-int main(void)
+void main(void)
 {
 	int i;
 	long int n = 612852475143;
@@ -21,5 +21,4 @@ int main(void)
 			i = 2;
 		}
 	}
-	return (0);
 }
