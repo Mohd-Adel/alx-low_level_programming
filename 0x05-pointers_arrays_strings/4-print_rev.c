@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 	int i;
-	
+
 	if (strlen(s) == 0)
 	{
 		_putchar(10);
