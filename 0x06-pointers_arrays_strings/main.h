@@ -18,7 +18,7 @@ char *string_toupper(char *);
 
 char *cap_string(char *);
 
-char *rot13(char *);
+char *rot13(char *input);
 
 void print_number(int n);
 

@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "main.h"
-/*
+/**
  *rot13 -  encodes a string using rot13.
+ *@input: input string
+ *Return: string
  */
-
 char *rot13(char *input)
 {
 	int i, j = 0;
