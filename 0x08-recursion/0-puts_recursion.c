@@ -8,12 +8,12 @@ unsigned int i = 0;
 void _puts_recursion(char *s)
 {
 	_putchar(s[i]);
-	if (i == strlen(s))
+	if (i == (strlen(s) - 1))
 	{
 		_putchar('\n');
 	}
 	i++;
-	if (i < strlen(s))
+	if (i < (strlen(s) - 1))
 	{
 	_puts_recursion(s);
 	}
