@@ -4,10 +4,9 @@
 *_puts_recursion -  prints a string, followed by a new line.
 *@s: input string.
 */
+unsigned int i = 0;
 void _puts_recursion(char *s)
 {
-	unsigned int i = 0;
-
 	_putchar(s[i]);
 	_putchar('\n');
 	i++;
