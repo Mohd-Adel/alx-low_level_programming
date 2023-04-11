@@ -13,7 +13,8 @@ int _atoi(char *s)
 
 	for (i = 0; i <= n; i++)
 	{
-		isdigit(s[i]);
+		printf("%d",isdigit(s[i]));
 	}
+return(0);
 }
 
