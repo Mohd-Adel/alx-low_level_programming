@@ -13,6 +13,7 @@ int _atoi(char *s)
 
 	for (i = 0; i <= n; i++)
 	{
-		if(isdigit(s[i]))
+		isdigit(s[i]);
 	}
 }
+
