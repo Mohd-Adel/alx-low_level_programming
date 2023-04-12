@@ -9,7 +9,6 @@ int _atoi(char *s)
 {
 	int i;
 	int n = strlen(s);
-	int output;
 
 	for (i = 0; i <= n; i++)
 	{
