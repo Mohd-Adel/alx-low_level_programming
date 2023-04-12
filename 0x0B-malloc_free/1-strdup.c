@@ -11,13 +11,18 @@ char *_strdup(char *str)
 {
 	unsigned int i;
 	char *s;
-
+	
+	if (str = NULL)
+	{
+	printf("failed to allocate memory");
+	return (0);
+	}
 	s = malloc(sizeof(char) * strlen(str));
 	if (s == NULL)
 	{
 	return (NULL);
 	}
-	for (i = 0; i <= strlen(str); i++)
+	for (i = 0; i <= (strlen(str) + 1); i++)
 	{
 		s[i] = str[i];
 	}
