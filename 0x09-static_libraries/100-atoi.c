@@ -5,15 +5,4 @@
 *_atoi - convert a string to an integer.
 *@s: input string.
 */
-int _atoi(char *s)
-{
-	int i;
-	int n = strlen(s);
-
-	for (i = 0; i <= n; i++)
-	{
-		printf("%d",isdigit(s[i]));
-	}
-return(0);
-}
-
+int _atoi(char *s);
