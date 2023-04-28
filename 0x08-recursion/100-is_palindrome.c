@@ -12,7 +12,7 @@ int helperfunction (char *input , int start , int end )
 	{
 	return (0);
 	}
-	if (*(input) == '/0')
+	if (start >= end )
 	{
 	return (1);
 	}
