@@ -1,22 +1,24 @@
 #include "main.h"
 #include <string.h>
 /**
- * is_palindrome - returns 1 if a string is a palindrome
- * @s: input string.
+ * helperfunction - to do iteration
+ * @input: input string.
+ * @start: start number.
+ * @end: end number
  * Return: 1 if success.
  */
 
-int helperfunction (char *input , int start , int end )
+int helperfunction(char *input, int start, int end)
 {
 	if (*(input + start) != *(input + end - 1))
 	{
 	return (0);
 	}
-	if (start >= end - 1 )
+	if (start >= end - 1)
 	{
 	return (1);
 	}
-	return ( helperfunction(input, start + 1, end - 1));
+	return (helperfunction(input, start + 1, end - 1));
 }
 
 /**
