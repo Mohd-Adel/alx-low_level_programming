@@ -12,9 +12,10 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, (k = 0);
+	int i, j, k;
 	char *ptr;
 
+	k = 0;
 	if (n >= strlen(s2))
 	{
 		n = strlen(s2);
