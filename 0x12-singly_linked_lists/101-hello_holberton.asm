@@ -6,12 +6,12 @@ global main
 main:
 push rbp
 
-mov edi, fmt
-mov esi, msg
-mov eax, 0
+mov rdi, fmt
+mov rsi, msg
+mov rax, 0
 call printf
 
-mov eax, 0
+mov rax, 0
 ret
 
 SECTION .data
