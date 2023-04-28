@@ -26,10 +26,10 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	for (length = 0; str[length];)
 	{
-	len++;
+	length++;
 	}
 	elem->str = cpy;
-	elem->len = len;
+	elem->len = length;
 	elem->next = *head;
 
 	*head = elem;
