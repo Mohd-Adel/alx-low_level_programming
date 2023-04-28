@@ -16,7 +16,7 @@ int helperfunction (char *input , int start , int end )
 	{
 	return (1);
 	}
-	return ( helperfunction(*input, start + 1, end - 1));
+	return ( helperfunction(input, start + 1, end - 1));
 }
 
 /**
