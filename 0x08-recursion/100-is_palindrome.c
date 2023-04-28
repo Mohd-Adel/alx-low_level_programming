@@ -30,5 +30,5 @@ int is_palindrome(char *s)
 	{
 	return (1);
 	}
-	return (helperfunction(*s, 0, strlen(s)));
+	return (helperfunction(s, 0, strlen(s)));
 }
