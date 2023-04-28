@@ -8,7 +8,7 @@
 
 int helperfunction (char *input , int start , int end )
 {
-	if (*(input) != *(input + end - 1))
+	if (*(input + start) != *(input + end - 1))
 	{
 	return (0);
 	}
