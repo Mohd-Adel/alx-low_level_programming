@@ -41,7 +41,7 @@ unsigned int _smaller(unsigned int x, unsigned int y)
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-	unsigned int i, smaller;
+	unsigned int smaller;
 	void *output;
 
 	if (new_size == old_size)
