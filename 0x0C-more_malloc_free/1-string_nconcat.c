@@ -49,11 +49,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (i = 0; i < lens1; i++)
-		s[i] = s1[i];
-
+		ptr[i] = s1[i];
 	for (j = 0; j < lens2; j++)
-		s[j + lens1] = s2[j];
-
-	s[lens1 + lens2] = '\0';
+		ptr[j + lens1] = s2[j];
+	ptr[lens1 + lens2] = '\0';
 	return (ptr);
 }
