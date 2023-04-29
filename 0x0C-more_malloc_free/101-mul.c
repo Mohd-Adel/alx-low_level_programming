@@ -9,7 +9,7 @@
  * Return: multiple of numbers.
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	unsigned long result;
 	int i, j;
@@ -34,4 +34,5 @@ void main(int argc, char *argv[])
 
 	result = atol(argv[1]) * atol(argv[2]);
 	printf("%lu\n", result);
+	return (result);
 }
