@@ -1,6 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * print_listint -  prints all the elements of a listint_t list.
