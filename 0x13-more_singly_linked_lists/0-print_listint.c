@@ -10,7 +10,6 @@
 
 size_t print_listint(const listint_t *h)
 {
-	int i;
 	size_t nodes;
 
 	nodes = 0;
