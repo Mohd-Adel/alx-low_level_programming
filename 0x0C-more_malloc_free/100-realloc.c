@@ -54,7 +54,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (ptr == NULL)
 		return (malloc(new_size));
 	smaller = _smaller(old_size, new_size);
-	output = malloc(smaller);
+	output = malloc(new_size);
 	_strcpy(output, ptr, smaller);
 	free(ptr);
 	return (output);
