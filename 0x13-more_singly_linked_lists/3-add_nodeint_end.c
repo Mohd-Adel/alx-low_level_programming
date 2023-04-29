@@ -10,7 +10,7 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t item, current;
+	listint_t *item, *current;
 
 	current = *head;
 	while (current->next)
@@ -19,4 +19,5 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 	item = current->next;
 	item->n = n;
+	return (item);
 }
