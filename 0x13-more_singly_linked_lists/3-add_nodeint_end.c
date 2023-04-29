@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * add_nodeint_end - adds a new node at the end of a listint_t list.
@@ -24,10 +25,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 	if (!*head)
 	{
-		free(current);
 		item->n = n;
 		item->next = NULL;
-		return (item);
+		return (*head = item);
 	}
 	else
 	{
