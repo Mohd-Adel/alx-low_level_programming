@@ -44,7 +44,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		if (n >= calc_len(s2))
+		if (n > calc_len(s2))
 		{
 			lens2 = calc_len(s2);
 		}
