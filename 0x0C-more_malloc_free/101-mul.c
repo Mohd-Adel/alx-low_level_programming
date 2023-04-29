@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
@@ -34,5 +34,5 @@ int main(int argc, char *argv[])
 
 	result = atol(argv[1]) * atol(argv[2]);
 	printf("%lu\n", result);
-	return (0);
+	return (result);
 }
