@@ -40,26 +40,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		lens2 = 0;
 	else
 	{
-		if (n > calc_len(s2))
-		{
-			lens2 = calc_len(s2);
-		}
-		else
-		{
-			lens2 = n;
-		}
+		lens2 = calc_len(s2);
 	}
-	ptr = malloc((lens1 + lens2 + 1) * sizeof(char));
-	if (!ptr)
+	if (lens2 > n)
+		lens2 = n;
+	ptr = malloc(sizeof(char) * (lens1 + lens2 + 1));
+	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < lens1; i++)
-	{
-		ptr[i] = s1[i];
-	}
-	for (j = 0 ; j < lens2; j++)
-	{
-		ptr[j + lens1] = s2[j];
-	}
-	ptr[lens1 + lens2] = '\0';
-	return (ptr);
-}
+		s[i] = s1[i];
+	for (j = 0; j < lens2; j++)
+		s[j + i=lens1] = s2[j];
+	s[lens1 + lens2] = '\0';
+	return (ptr);}
