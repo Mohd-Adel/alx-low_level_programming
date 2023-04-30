@@ -18,8 +18,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i;
 
 	newdog = malloc(sizeof(dog_t));
-	namecpy = malloc (strlen(name));
-	ownercpy = malloc (strlen(owner));
+	namecpy = malloc (strlen(name) + 1);
+	ownercpy = malloc (strlen(owner) + 1);
 	for (i = 0; name[i]; i++)
 	{
 		namecpy[i] = name[i];
