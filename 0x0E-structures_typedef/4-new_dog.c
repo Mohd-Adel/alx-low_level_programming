@@ -1,5 +1,6 @@
-#include "dog_t"
+#include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * new_dog - function that creates a new dog.
  * @name: input name.
@@ -9,10 +10,15 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t d;
+	dog_t *newdog;
 
-	d.name = name;
-	d.age = age;
-	d.owner = owner;
-	return (d);
+	newdog = malloc(sizeof(dog_t));
+	if (!newdog)
+	{
+		return (NULL);
+	}
+	newdog->name = name;
+	newdog->age = age;
+	newdog->owner = owner;
+	return (newdog);
 }
