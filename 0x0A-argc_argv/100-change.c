@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	if (input < 0)
 	{
 		printf("0");
+		return (1);
 	}
 	for (i = 0; coins[i]; i++)
 	{
