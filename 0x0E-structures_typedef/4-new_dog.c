@@ -23,5 +23,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	newdog->name = name;
 	newdog->owner = owner;
 	newdog->age = age;
+
+	if (!newdog->name || !newdog->owner)
+	{
+		free(newdog->name);
+		free(newdog->owner);
+		return (NULL);
+	}
 	return (newdog);
 }
