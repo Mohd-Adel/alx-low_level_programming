@@ -11,24 +11,12 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *current;
+	listint_t *currentitem;
 
-	current = malloc(sizeof(listint_t));
-	if (!current)
+	while (head)
 	{
-		free(current);
+		currentitem = head;
+		head = head->next;
+		free(currentitem);
 	}
-	if (head && !head->next)
-	{
-		free(head);
-	}
-	else if (head && head->next)
-	{
-		while (head->next)
-		{
-			current = head->next;
-			free(head);
-		}
-	}
-	free(current);
 }
