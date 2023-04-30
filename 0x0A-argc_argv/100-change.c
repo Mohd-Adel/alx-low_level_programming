@@ -29,14 +29,14 @@ int main(int argc, char *argv[])
 		if (input % coins[i] == 0)
 		{
 			change += (input / coins[i]);
-			break;
+			input = input % coins[i];
 		}
 		else
 		{
 			change += (input / coins[i]);
-			input -= (input * coins[i]);
+			input = input % coins[i];
 		}
 	}
-	printf("%d\n", change);
+	printf("%i\n", change);
 	return (change);
 }
