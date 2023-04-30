@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	input = atoi(argv[1]);
 	if (input < 0)
 	{
-		printf("0");
+		printf("0\n");
 		return (1);
 	}
 	for (i = 0; coins[i]; i++)
