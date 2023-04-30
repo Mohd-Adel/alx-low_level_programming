@@ -8,7 +8,7 @@
  *Return: change.
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int input, i;
 	int change = 0;
@@ -38,4 +38,5 @@ void main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", change);
+	return (change);
 }
