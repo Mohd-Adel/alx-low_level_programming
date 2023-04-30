@@ -24,11 +24,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		namecpy[i] = name[i];
 	}
+	namecpy[i + 1] = '\0';
 
 	for (i = 0; owner[i]; i++)
 	{
 		ownercpy[i] = owner[i];
 	}
+	ownercpy[i + 1] = '\0';
 
 	newdog->name = namecpy;
 	newdog->owner = ownercpy;
