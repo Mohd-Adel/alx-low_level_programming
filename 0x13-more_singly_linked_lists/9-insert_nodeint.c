@@ -28,15 +28,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			iterator = iterator->next;
 		}
 	}
-	if (iterator)
-	{
 		new->next = iterator->next;
 		new->n = n;
 		iterator->next = new;
 		return (new);
-	}
-	else
-	{
-		return (NULL);
-	}
 }
