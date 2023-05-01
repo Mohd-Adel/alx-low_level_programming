@@ -10,14 +10,13 @@
  * Return: new node address.
  */
 
-
-
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new;
 	unsigned int i;
 
 	new = malloc(sizeof(listint_t));
+	i = 0;
 	while (*head && head && i < idx)
 	{
 		*head = (*head)->next;
@@ -29,5 +28,4 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (!new)
 		return (NULL);
 	return (new);
-	
 }
