@@ -18,16 +18,12 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	for (i = 0; i <= index; i++)
 	{
 		item = head;
-		if (head->next)
-		{
-		head = head->next;
-		item = head;
-		}
-		else
+		if (!head->next && i < index)
 		{
 			item = NULL;
 			break;
 		}
+		head = head->next;
 	}
 	}
 
