@@ -11,8 +11,11 @@
 int pop_listint(listint_t **head)
 {
 	int i;
+	listint_t *temp;
 
+	i = 0;
 	if (head)
+		temp = *head;
 	{
 		if ((*head)->n)
 		{
@@ -23,7 +26,8 @@ int pop_listint(listint_t **head)
 			i = 0;
 		}
 		*head = (*head)->next;
+		free(temp);
 		return (i);
 	}
-	return (0);
+	return (i);
 }
