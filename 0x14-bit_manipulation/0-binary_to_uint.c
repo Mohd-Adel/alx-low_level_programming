@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
+#include <math.h>
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int.
@@ -10,12 +10,26 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int output = 0;
+	int i, j, power;
+	unsigned int output;
 
-	for (i = 0; i < strlen(b); i++)
+	output = 0;
+	if (!b)
+		return (0);
+	power = 1;
+	for (j = 0; b[j];)
 	{
-		output += (b[i] - '0') * (8 - i);
+		j++;
+	}
+	for (i = j; i >= 0; i--)
+	{
+		if (b[i] != '0' && b[i] != '1')
+		{
+			return (0);
+		}
+		power *= 2;
+		if (b[i] & 1)
+			output += power;
 	}
 	return (output);
 }
