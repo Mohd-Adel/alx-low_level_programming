@@ -11,25 +11,16 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int i, j, power;
-	unsigned int output;
+	unsigned int output = 0;
 
-	output = 0;
-	if (!b)
-		return (0);
-	power = 1;
-	for (j = 0; b[j];)
+	while (b && *b)
 	{
-		j++;
-	}
-	for (i = j; i >= 0; i--)
-	{
-		if (b[i] != '0' && b[i] != '1')
-		{
+		if (*b != '0' && *b != '1')
 			return (0);
-		}
-		power *= 2;
-		if (b[i] & 1)
-			output += power;
+
+		output = output << 1;
+		output = output | (*b - '0');
+		b++;
 	}
-	return (output);
+		return (output);
 }
