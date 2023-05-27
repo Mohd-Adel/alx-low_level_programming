@@ -11,7 +11,6 @@ char *new_buff(char *file)
 	char *buff;
 
 	buff = malloc(sizeof(char) * 1024);
-
 	/*check*/
 	if (buff == NULL)
 	{
@@ -19,7 +18,6 @@ char *new_buff(char *file)
 			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
-
 	return (buff);
 }
 
@@ -32,7 +30,6 @@ void cl_file(int fd)
 	int end;
 
 	end = close(fd);
-
 	/*check*/
 	if (end == -1)
 	{
@@ -57,12 +54,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	buff = new_buff(argv[2]);
 	start = open(argv[1], O_RDONLY);
 	rd = read(start, buff, 1024);
 	end = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
 	do {
 		if (start == -1 || rd == -1)
 		{
@@ -71,7 +66,6 @@ int main(int argc, char *argv[])
 			free(buff);
 			exit(98);
 		}
-
 		rt = write(end, buff, rd);
 		if (end == -1 || rt == -1)
 		{
@@ -80,15 +74,11 @@ int main(int argc, char *argv[])
 			free(buff);
 			exit(99);
 		}
-
 		rd = read(start, buff, 1024);
 		end = open(argv[2], O_WRONLY | O_APPEND);
-
 	} while (rd > 0);
-
 	free(buff);
 	cl_file(start);
 	cl_file(end);
-
 	return (0);
 }
