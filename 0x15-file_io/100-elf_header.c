@@ -41,7 +41,7 @@ void check_elf(unsigned char *e_ident)
 }
 
 /**
- * print_magic - Prints the magic numbers
+ * prt_magic - Prints the magic numbers
  * @e_ident: A pointer to ELF magic numbers.
  *
  * Description: Magic numbers are separated by spaces.
@@ -64,7 +64,7 @@ void prt_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Prints ELF class
+ * prt_class - Prints ELF class
  * @e_ident: A pointer to ELF class.
  */
 void prt_class(unsigned char *e_ident)
@@ -88,7 +88,7 @@ void prt_class(unsigned char *e_ident)
 }
 
 /**
- * print_data - Prints ELF Data
+ * prt_data - Prints ELF Data
  * @e_ident: A pointer to ELF class.
  */
 void prt_data(unsigned char *e_ident)
@@ -112,7 +112,7 @@ void prt_data(unsigned char *e_ident)
 }
 
 /**
- * print_version - Prints ELF  version.
+ * prt_version - Prints ELF  version.
  * @e_ident: A pointer ELF version.
  */
 void prt_version(unsigned char *e_ident)
@@ -132,7 +132,7 @@ void prt_version(unsigned char *e_ident)
 }
 
 /**
- * print_osabi - Prints OS/ABI
+ * prt_osabi - Prints OS/ABI
  * @e_ident: A pointer to ELF version
  */
 void prt_osabi(unsigned char *e_ident)
@@ -177,7 +177,7 @@ void prt_osabi(unsigned char *e_ident)
 }
 
 /**
- * print_abi - Prints ABI version.
+ * prt_abi - Prints ABI version.
  * @e_ident: A pointer to ELF version
  */
 void prt_abi(unsigned char *e_ident)
@@ -187,7 +187,7 @@ void prt_abi(unsigned char *e_ident)
 }
 
 /**
- * print_type - ELF type printer
+ * prt_type - ELF type printer
  * @e_type: ELF type.
  * @e_ident: ptr to ELF class.
  */
@@ -221,7 +221,7 @@ void prt_type(unsigned int e_type, unsigned char *e_ident)
 }
 
 /**
- * print_entry - Prt entry points
+ * prt_entry - Prt entry points
  * @e_entry: entry points address
  * @e_ident: array ptr
  */
