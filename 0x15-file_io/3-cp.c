@@ -42,7 +42,7 @@ void cl_file(int fd)
 }
 
 /**
- * main - Copy files. 
+ * main - Copy files.
  * @argc: args count
  * @argv: args values
  * Return: success.
