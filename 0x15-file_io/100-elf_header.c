@@ -1,3 +1,7 @@
+#include <elf.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -301,4 +305,4 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	free(header);
 	close_elf(op);
 	return (0);
-
+}
