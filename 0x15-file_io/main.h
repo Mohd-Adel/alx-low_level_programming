@@ -6,6 +6,8 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 char *new_buff(char *file);
 void cl_file(int fd);
